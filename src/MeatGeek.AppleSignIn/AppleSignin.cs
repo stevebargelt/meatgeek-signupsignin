@@ -16,6 +16,8 @@ namespace MeatGeek.AppleSignin
 {
     public class AppleOpenIdConfiguration
     {
+
+        [FunctionName("AppleSignin")]
         public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "signinwithapple/.well-known/openid-configuration")] 
             HttpRequest req, ILogger log)

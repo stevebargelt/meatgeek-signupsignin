@@ -23,6 +23,7 @@ namespace MeatGeek.AppleSignin
 {
     public class AppleClientSecret
     {
+        [FunctionName("AppleClientSecret")]
         public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "signinwithapple/clientsecret")] 
             HttpRequest req, ILogger log)
