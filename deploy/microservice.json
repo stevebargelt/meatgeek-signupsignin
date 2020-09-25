@@ -174,7 +174,8 @@
             "AzureWebJobStorage": "@Microsoft.KeyVault(SecretUri=https://meatgeek-key-vault.vault.azure.net/secrets/AzureWebJobStorage-SignupSignin/a310bf1e945a49838f4eac7dbb65dfbd)",
             "AzureWebJobsSecretStorageType": "Files",
             "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING": "@Microsoft.KeyVault(SecretUri=https://meatgeek-key-vault.vault.azure.net/secrets/AzureWebJobStorage-SignupSignin/a310bf1e945a49838f4eac7dbb65dfbd)",
-            "WEBSITE_CONTENTSHARE": "meatgeeksusiapifunctionsapp"
+            "WEBSITE_CONTENTSHARE": "meatgeeksusiapifunctionsapp",
+            "WEBSITE_LOAD_USER_PROFILE": 1
           },
           "dependsOn": [
             "[resourceId('Microsoft.Web/sites', variables('functionsApiAppName'))]",
